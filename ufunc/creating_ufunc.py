@@ -14,3 +14,7 @@ def mydivision(x, y):
 
 my_division = np.frompyfunc(mydivision, 2, 1)
 print(my_division([1, 2, 3, 4], [5, 6, 7, 8]))
+
+# checking if the above functions are ufuncs
+print(type(my_multiplication))
+print(type(my_division))
